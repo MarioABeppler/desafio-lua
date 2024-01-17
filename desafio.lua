@@ -54,7 +54,7 @@ local luckAttribute = 5
 
 -- Eventos
 local krakenDamage = 4
-local boatAccident = 1
+local boatAccident = 3
 local newClothing = 2
 
 -- função que recebe um atributo e nos retorna uma borra de progresso em strin / texto
@@ -97,15 +97,28 @@ print(borda)
 
 -- Resutado dos Eventos apois Jornada
 lifeAttribute = lifeAttribute - krakenDamage
+luckAttribute = luckAttribute - boatAccident
+defenseAttribute = defenseAttribute + newClothing
 
 -- Historia
 print(borda)
-print("| O" .. monsterName .. " iniciou uma Grande Jornada: ")
+print("| O " .. monsterName .. " iniciou uma Grande Jornada: ")
+print("| ")
+print("| ")
 print("| Em seu decimo sexto dia no mar nosso " .. monsterName)
-print("| encontrou uma terrivel Fera marinha o Kraken ao qual teviveram um luta fervorosa que o " .. monsterName .. "\n| Saiu Vitorioso")
+print("| encontrou uma terrivel Fera marinha o Kraken ao qual teviveram uma luta fervorosa que o " .. monsterName .. "\n| Saiu Vitorioso.")
+print("| ")
 print("| ")
 print("| Em seu septuagésimo segundo dia no mar nosso " .. monsterName)
-print("| Em seu septuagésimo segundo dia no mar nosso ")
+print("| estava em uma tempestade que foi tão forte que fez o barco se acidentar no em rochas proximas " .. "\n| levando oito dias para o barco ser reparado.")
+print("| ")
+print("| ")
+print("| Em seu ducentésimo quadragésimo nono dia nosso " .. monsterName .. " avistou uma ilha")
+print("| ao atracar na ilha e explorala descobriu um Baú contendo um uniforme intocado feito de malha de açó muito melhor que o seu atual de seda.")
+print("| ")
+print("| ")
+print("| Então em seu tricentésimo vigésimo quinto dia nosso" .. monsterName .." Retorna a sua casa tendo perdido e ganhado atributos. ")
+print("| ")
 print("| ")
 print("| Atributos Apois Eventos:")
 print("|    Ataque:       " .. getProgressBar(attackAttribute))
@@ -115,4 +128,6 @@ print("|    Velocidade:   " .. getProgressBar(speedAttribute))
 print("|    Inteligencia: " .. getProgressBar(inteligeneAttribute))
 print("|    Sorte:        " .. getProgressBar(luckAttribute))
 print("| ")
+print("| ")
+print("| Fim Da Grande Jornada do nosso grande " .. monsterName)
 print(borda)
