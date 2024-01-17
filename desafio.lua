@@ -33,6 +33,9 @@ Atributos
 --  Modificar UTF-8 no terminal
 os.execute("chcp 65001")
 
+-- Strings encurtadas
+local borda = "--------------------------------------"
+
 -- Criatura
 local monsterName = "Capitão Pirata"
 local description = "Um Homem experiente que viajou os 7 Mares e comanda um grande Navio"
@@ -48,7 +51,11 @@ local lifeAttribute = 8
 local speedAttribute = 4
 local inteligeneAttribute = 7
 local luckAttribute = 5
-local charisAttribute = 2
+
+-- Eventos
+local krakenDamage = 4
+local boatAccident = 1
+local newClothing = 2
 
 -- função que recebe um atributo e nos retorna uma borra de progresso em strin / texto
 local function getProgressBar(attribute)
@@ -66,8 +73,9 @@ local function getProgressBar(attribute)
     return result    
 end
 
--- Cartão
-print("--------------------------------------")
+
+-- Cartão inicial
+print(borda)
 print("| ")
 print("| Nome: " .. monsterName)
 print("| Descrição: " .. description)
@@ -84,6 +92,22 @@ print("|    Vida:         " .. getProgressBar(lifeAttribute))
 print("|    Velocidade:   " .. getProgressBar(speedAttribute))
 print("|    Inteligencia: " .. getProgressBar(inteligeneAttribute))
 print("|    Sorte:        " .. getProgressBar(luckAttribute))
-print("|    Carisma:      " .. getProgressBar(charisAttribute))
 print("| ")
-print("--------------------------------------")
+print(borda)
+
+-- Historia
+print(borda)
+print("| Atributos Apois Eventos")
+print("| Em seu decimo sexto dia no mar nosso " .. monsterName)
+print("| encontrou uma terrivel Fera marinha o Kraken ao qual teviveram um luta fervorosa que o " .. monsterName .. "\n| Saiu Vitorioso")
+lifeAttribute = lifeAttribute - krakenDamage
+print("| ")
+print("| Atributos:")
+print("|    Ataque:       " .. getProgressBar(attackAttribute))
+print("|    Defesa:       " .. getProgressBar(defenseAttribute))
+print("|    Vida:         " .. getProgressBar(lifeAttribute))
+print("|    Velocidade:   " .. getProgressBar(speedAttribute))
+print("|    Inteligencia: " .. getProgressBar(inteligeneAttribute))
+print("|    Sorte:        " .. getProgressBar(luckAttribute))
+print("| ")
+print(borda)
