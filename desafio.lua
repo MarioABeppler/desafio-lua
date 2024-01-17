@@ -117,7 +117,7 @@ print("| Em seu ducentésimo quadragésimo nono dia nosso " .. monsterName .. " 
 print("| ao atracar na ilha e explorala descobriu um Baú contendo um uniforme intocado feito de malha de açó muito melhor que o seu atual de seda.")
 print("| ")
 print("| ")
-print("| Então em seu tricentésimo vigésimo quinto dia nosso" .. monsterName .." Retorna a sua casa tendo perdido e ganhado atributos. ")
+print("| Então em seu tricentésimo vigésimo quinto dia nosso " .. monsterName .." Retorna a sua casa tendo perdido e ganhado atributos. ")
 print("| ")
 print("| ")
 print("| Atributos Apois Eventos:")
