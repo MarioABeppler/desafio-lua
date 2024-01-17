@@ -95,14 +95,19 @@ print("|    Sorte:        " .. getProgressBar(luckAttribute))
 print("| ")
 print(borda)
 
+-- Resutado dos Eventos apois Jornada
+lifeAttribute = lifeAttribute - krakenDamage
+
 -- Historia
 print(borda)
-print("| Atributos Apois Eventos")
+print("| O" .. monsterName .. " iniciou uma Grande Jornada: ")
 print("| Em seu decimo sexto dia no mar nosso " .. monsterName)
 print("| encontrou uma terrivel Fera marinha o Kraken ao qual teviveram um luta fervorosa que o " .. monsterName .. "\n| Saiu Vitorioso")
-lifeAttribute = lifeAttribute - krakenDamage
 print("| ")
-print("| Atributos:")
+print("| Em seu septuagésimo segundo dia no mar nosso " .. monsterName)
+print("| Em seu septuagésimo segundo dia no mar nosso ")
+print("| ")
+print("| Atributos Apois Eventos:")
 print("|    Ataque:       " .. getProgressBar(attackAttribute))
 print("|    Defesa:       " .. getProgressBar(defenseAttribute))
 print("|    Vida:         " .. getProgressBar(lifeAttribute))
